@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue"></script>
+    <script src="./j-navBar.js"></script>
+    <link rel="stylesheet" href="./j-navBar.css">
+</head>
+
+<body>
+    <div id="root">
+        <j-navbar title="首页" @click-left="backfn1" @click-right="btnfn"></j-navbar>
+        <j-navbar2 title="我的" @click-left="backfn2" @input="searchfn"> </j-navbar2>
+        
+    </div>
+    <script>
+         const vm = new Vue({
+            el : '#root',
+            data : {  },
+            methods : {
+                backfn1(){
+                    console.log('首页 返回上一页');
+                },
+                backfn2(){
+                    console.log('我的 返回上一页');
+                },
+                btnfn(){
+                    console.log('点击按钮 开始逻辑处理');
+                },
+                searchfn(data){
+                    console.log('发送请求 搜索成功');
+                }
+             }    
+        });
+    </script>
+</body>
+
+</html>

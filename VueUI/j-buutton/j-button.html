@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue"></script>
+    <script src="./j-button.js"></script>
+    <link rel="stylesheet" href="./j-button.css">
+</head>
+
+<body>
+    <div id="root">
+        <j-button title="提交" bgcolor="red" @click="btnfn"></j-button>
+        <j-button title="确认" bgcolor="blue" @click="btnfn"></j-button>
+        <j-button title="注册" bgcolor="green" @click="btnfn"></j-button>
+        <j-button title="取消" bgcolor="pink" @click="btnfn"></j-button>
+    </div>
+    <script>
+         const vm = new Vue({
+            el : '#root',
+            data : {  },
+            methods : { 
+                btnfn(){
+
+                }
+            }    
+        });
+    </script>
+</body>
+
+</html>

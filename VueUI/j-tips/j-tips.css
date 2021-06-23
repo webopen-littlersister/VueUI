@@ -1,0 +1,12 @@
+.j-tips{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    background-color: #999;
+    opacity: .6;
+    border-radius: 15px;
+    padding :10px  20px;
+    color: #fff;
+    font-size: 20px;
+
+}

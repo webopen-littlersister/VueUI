@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue"></script>
+    <script src="./j-table.js"></script>
+    <link rel="stylesheet" href="./j-table.css">
+</head>
+
+<body>
+    <div id="root">
+        <j-table :column="columns" :database="databases"></j-table>
+    </div>
+    <script>
+         const vm = new Vue({
+            el : '#root',
+            data : { 
+                columns:[
+                    {title:"序号",key:"id"},
+                    {title:"姓名",key:"name"},
+                    {title:"年龄",key:"age"},
+                    {title:"性别",key:"sex"},
+                ],
+                databases:[
+                    {id:'1',name:'aaa',age:'11',sex:'男'},
+                    {id:'2',name:'bbb',age:'22',sex:'女'},
+                    {id:'3',name:'ccc',age:'33',sex:'男'},
+                    {id:'4',name:'ddd',age:'44',sex:'男'}
+                ]
+             },
+            methods : { }    
+        });
+    </script>
+</body>
+
+</html>
